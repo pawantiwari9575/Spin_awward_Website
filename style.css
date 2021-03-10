@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Gilroy"; */
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(57, 113, 117);
+    opacity: .7;
+}
+#back{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(161, 119, 64); */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 25px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    /* background-color: #eee; */
+}
+nav img{
+    height: 100%;
+}
+#nav .links a{
+    color: black;
+    font-size: 13px;
+}
+nav .links a:nth-child(2){
+    margin-left: 30px;
+}
+
+h1{
+    line-height: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Cormorant";
+    font-weight: 100;
+    margin-top: 60px;
+}
+#main{
+    /* display: flex; */
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 90px;
+    
+}
+#main .imgcntnr{
+    width: 200px;
+    height: 200px;
+    /* background-color: yellow; */
+}
+#main #one,#main #sx{
+    width: 180px;
+    height: 250px;
+    /* background-color: violet; */
+}
+#main #one{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    /* background-color: turquoise; */
+}
+#main #sx{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    /* background-color: turquoise; */
+    transform: translate(0, -50%);
+}
+#main #holdr1{
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    transform: translate(0, -50%);  
+}
+#main .holdr div{
+    margin-top: 20px;
+}
+#main #holdr2{
+    position: absolute;
+    top: 50%;
+    right: 220px;
+    transform: translate(0, -50%);  
+}
+
+#videoplyr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 370px;
+    min-height: 100vh;
+    /* background-color: tomato; */
+    overflow: hidden;
+}
+#videoplyr video{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%) scale(1.25);
+}
+#main .imgcntnr{
+    background-size: cover;
+    background-position: center;
+}
+#main #one{
+    background-image: url(./assits/flamenca.jpg);
+}
+#main #two{
+    background-image: url(./assits/secuencia-01.jpg);
+}
+#main #three{
+    background-image: url(./assits/secuencia-01_2.jpg);
+}
+#main #fr{
+    background-image: url(./assits/secuencia-01_6.jpg);
+}
+#main #fv{
+    background-image: url(./assits/secuencia-01_7.jpg);
+}
+#main #sx{
+    background-image: url(./assits/secuencia-01_8.jpg);
+}
